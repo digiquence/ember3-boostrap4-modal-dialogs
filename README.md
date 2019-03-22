@@ -2,7 +2,7 @@
 
 Examples of modal dialogs in an ember application using the ember-cli addon ember-modal-service.
 
-Live Demo: https://digiquence.github.io/ember3-bootstrap4-modal-dialogs/modals
+Live Demo: https://digiquence.github.io/ember3-bootstrap4-modal-dialogs/#/modals
 
 
 ## Prerequisites
