@@ -1,0 +1,141 @@
+<div class="row">
+    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+        <div class="row flex-grow">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Plain modal dialog</h4>
+                        <p class="card-description">
+                            Modal with a fixed message and a close button
+                        </p>
+                        <span class="text-small">
+                            If is closed by clicking on the X mark or on the backdrop, cannot be repoen
+                        </span>
+                        <form class="forms-sample">
+                            <button type="submit" class="btn btn-xl btn-success mr-2" {{action "showPlainModal"}}>
+                                Show modal
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+        <div class="row flex-grow">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Plain modal dialog</h4>
+                        <p class="card-description">
+                            Modal with a fixed message and a close button
+                        </p>
+                        <span class="text-small">Closing behavior corrected</span>
+                        <form class="forms-sample">
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showPlainModalCorrected"}}>Show modal</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+        <div class="row flex-grow">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Modal dialog with dynamic message</h4>
+                        <p class="card-description">
+                            Modal that accepts a message as input parameter
+                        </p>
+                        <span class="text-small">All the buttons call the same function and the same modal dialog</span>
+                        <form class="forms-sample">
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showInputMessageModal" 1}}>
+                                Message 1
+                            </button>
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showInputMessageModal" 2}}>
+                                Message 2
+                            </button>
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showInputMessageModal" 3}}>
+                                Message 3
+                            </button>
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showInputMessageModal" 4}}>
+                                Message 4
+                            </button>
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showInputMessageModal" 5}}>
+                                Message 5
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+        <div class="row flex-grow">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Modal dialog with dynamic message</h4>
+                        <p class="card-description">
+                            Modal that accepts a message as input parameter
+                        </p>
+                        <span class="text-small">Write the message you want to show</span>
+                        <form class="forms-sample">
+                            <div class="form-inline">
+                                <label class="col-sm-2 col-form-label">Message</label>
+                                {{input class="form-control col-sm-6" type="text" value=dynamicMessage maxlength="20"}}
+                                <button class="btn btn-xl btn-success col-sm-3 ml-3"
+                                    {{action "showInputDynamicMessageModal" dynamicMessage}}>
+                                    Show my message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 d-flex align-items-stretch grid-margin">
+        <div class="row flex-grow">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Modal dialog with dynamic message, title, and button label</h4>
+                        <p class="card-description">
+                            Modal that accepts a message, title and button label as input parameters
+                        </p>
+                        <span class="text-small">Write the values you want to show on your modal</span>
+                        <form class="forms-sample">
+                            <div class="form-inline">
+                                <label class="col-sm-1 col-form-label">Message</label>
+                                {{input class="form-control col-sm-3" type="text" value=dynamicMessage2 maxlength="20"}}
+                                <label class="col-sm-1 col-form-label">Title</label>
+                                {{input class="form-control col-sm-3" type="text" value=dynamicTitle2 maxlength="20"}}
+                                <label class="col-sm-1 col-form-label">Button</label>
+                                {{input class="form-control col-sm-3" type="text" value=dynamicButtonLabel2 maxlength="20"}}
+                            </div>
+                            <button class="btn btn-xl btn-success col-sm-3 mr-3 mt-3"
+                                {{action "showInputFullDynamicModal" dynamicMessage2 dynamicTitle2 dynamicButtonLabel2}}>
+                                Show my dynamic modal
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+{{#bs-modal as |modal|}}
+    {{#modal.header}}
+        <h4 class="modal-title">
+            Message
+        </h4>
+    {{/modal.header}}
+    {{#modal.body}}
+        Just a plain modal dialog
+    {{/modal.body}}
+    {{#modal.footer}}
+        {{#bs-button type="primary" onClick=(action resolve)}}Close{{/bs-button}}
+    {{/modal.footer}}
+{{/bs-modal}}

@@ -1,0 +1,15 @@
+{{#bs-modal message=model.options.message onHidden=(action "closeModal") as |modal|}}
+    {{#modal.header}}
+        <h4 class="modal-title">
+            {{model.options.title}}
+        </h4>
+    {{/modal.header}}
+    {{#modal.body}}
+        {{model.options.message}}
+    {{/modal.body}}
+    {{#modal.footer}}
+        {{#bs-button type="primary" onClick=(action resolve)}}
+            {{model.options.buttonLabel}}
+        {{/bs-button}}
+    {{/modal.footer}}
+{{/bs-modal}}

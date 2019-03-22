@@ -50,3 +50,8 @@
 .list-ticked li::before, .list-arrow li::before, .list-star li::before {
     font-family: unset;
 }
+
+.text-small {
+    font-size: 12px;
+    color: #AAA;
+}

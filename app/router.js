@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('forms');
   this.route('buttons');
   this.route('typography');
+  this.route('modals');
 });
 
 export default Router;

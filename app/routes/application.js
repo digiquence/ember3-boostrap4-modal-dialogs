@@ -11,6 +11,7 @@ export default Route.extend({
         allMenuItems.push(store.createRecord("menu-item", { id: 1, route: "forms", icon: "icon-flag", label: "Forms" }));
         allMenuItems.push(store.createRecord("menu-item", { id: 2, route: "buttons", icon: "icon-grid", label: "Buttons" }));
         allMenuItems.push(store.createRecord("menu-item", { id: 3, route: "typography", icon: "icon-pencil", label: "Typography" }));
+        allMenuItems.push(store.createRecord("menu-item", { id: 4, route: "modals", icon: "icon-loop", label: "Modals" }));
 
         return RSVP.hash({
             menuItems: allMenuItems,
