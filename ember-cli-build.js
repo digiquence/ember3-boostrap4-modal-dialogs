@@ -4,7 +4,7 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     fingerprint: {
       extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg', 'ttf', 'woff'],
-      prepend: '/ember3-bootstrap4-template/'
+      prepend: '/ember3-bootstrap4-modal-dialogs/'
     },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
