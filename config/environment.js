@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember3-bootstrap4-template',
+    modulePrefix: 'ember3-bootstrap4-modal-dialogs',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -44,7 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/ember3-bootstrap4-template';
+    ENV.baseURL = '/ember3-bootstrap4-modal-dialogs';
     ENV.locationType = 'hash';
   }
 

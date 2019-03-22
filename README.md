@@ -1,8 +1,8 @@
-# ember3-bootstrap4-template
+# ember3-bootstrap4-modal dialogs   
 
-Example integration of an ember application with a free bootstrap template (Stellar).
+Examples of modal dialogs in an ember application using the ember-cli addon ember-modal-service.
 
-Live Demo: https://digiquence.github.io/ember3-bootstrap4-template/
+Live Demo: https://digiquence.github.io/ember3-bootstrap4-modal-dialogs/
 
 
 ## Prerequisites
@@ -14,7 +14,7 @@ Live Demo: https://digiquence.github.io/ember3-bootstrap4-template/
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember3-bootstrap4-template`
+* `cd ember3-bootstrap4-modal-dialogs`
 * `npm install`
 
 ## Running / Development
