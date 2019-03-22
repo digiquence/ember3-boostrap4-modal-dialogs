@@ -18,6 +18,22 @@ export default Controller.extend({
         },
         showInputFullDynamicModal(message, title, buttonLabel) {
             this.get('modal').open('fulldynamic', { message: message, title: title, buttonLabel: buttonLabel });
+        },
+        showFeedback1Modal() {
+            this.get('modal').open('feedback1').then(() => {
+                this.set('feedback1', "Accepted");
+            }).catch(() => {
+                this.set('feedback1', "Rejected");
+            });
+        },
+        showFeedback2Modal() {
+            this.get('modal').open('feedback2').then((option) => {
+                this.set('feedback2', "$" + option + ", thank you! :)");
+            }).catch(() => {
+                this.set('feedback2', "No donation :(");
+            });
+
         }
+
     },
 });

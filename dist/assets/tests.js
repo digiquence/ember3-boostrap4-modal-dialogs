@@ -72,6 +72,54 @@ define("ember3-bootstrap4-template/tests/integration/components/app-menu-test", 
     });
   });
 });
+define("ember3-bootstrap4-template/tests/integration/components/modal-feedback1-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
+  "use strict";
+
+  (0, _qunit.module)('Integration | Component | modal-feedback1', function (hooks) {
+    (0, _emberQunit.setupRenderingTest)(hooks);
+    (0, _qunit.test)('it renders', async function (assert) {
+      // Set any properties with this.set('myProperty', 'value');
+      // Handle any actions with this.set('myAction', function(val) { ... });
+      await (0, _testHelpers.render)(Ember.HTMLBars.template({
+        "id": "9wm1fbE8",
+        "block": "{\"symbols\":[],\"statements\":[[1,[21,\"modal-feedback1\"],false]],\"hasEval\":false}",
+        "meta": {}
+      }));
+      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+
+      await (0, _testHelpers.render)(Ember.HTMLBars.template({
+        "id": "5ZtvxKgH",
+        "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"modal-feedback1\",null,null,{\"statements\":[[0,\"        template block text\\n\"]],\"parameters\":[]},null],[0,\"    \"]],\"hasEval\":false}",
+        "meta": {}
+      }));
+      assert.equal(this.element.textContent.trim(), 'template block text');
+    });
+  });
+});
+define("ember3-bootstrap4-template/tests/integration/components/modal-feedback2-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
+  "use strict";
+
+  (0, _qunit.module)('Integration | Component | modal-feedback2', function (hooks) {
+    (0, _emberQunit.setupRenderingTest)(hooks);
+    (0, _qunit.test)('it renders', async function (assert) {
+      // Set any properties with this.set('myProperty', 'value');
+      // Handle any actions with this.set('myAction', function(val) { ... });
+      await (0, _testHelpers.render)(Ember.HTMLBars.template({
+        "id": "fqwD6T4+",
+        "block": "{\"symbols\":[],\"statements\":[[1,[21,\"modal-feedback2\"],false]],\"hasEval\":false}",
+        "meta": {}
+      }));
+      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+
+      await (0, _testHelpers.render)(Ember.HTMLBars.template({
+        "id": "Ni6f4z84",
+        "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"modal-feedback2\",null,null,{\"statements\":[[0,\"        template block text\\n\"]],\"parameters\":[]},null],[0,\"    \"]],\"hasEval\":false}",
+        "meta": {}
+      }));
+      assert.equal(this.element.textContent.trim(), 'template block text');
+    });
+  });
+});
 define("ember3-bootstrap4-template/tests/integration/components/modal-fulldynamic-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
   "use strict";
 
@@ -188,6 +236,14 @@ define("ember3-bootstrap4-template/tests/lint/app.lint-test", [], function () {
     assert.expect(1);
     assert.ok(true, 'components/app-menu.js should pass ESLint\n\n');
   });
+  QUnit.test('components/modal-feedback1.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/modal-feedback1.js should pass ESLint\n\n');
+  });
+  QUnit.test('components/modal-feedback2.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/modal-feedback2.js should pass ESLint\n\n');
+  });
   QUnit.test('components/modal-fulldynamic.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/modal-fulldynamic.js should pass ESLint\n\n');
@@ -265,6 +321,14 @@ define("ember3-bootstrap4-template/tests/lint/templates.template.lint-test", [],
     assert.expect(1);
     assert.ok(true, 'ember3-bootstrap4-template/templates/components/app-menu.hbs should pass TemplateLint.\n\n');
   });
+  QUnit.test('ember3-bootstrap4-template/templates/components/modal-feedback1.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'ember3-bootstrap4-template/templates/components/modal-feedback1.hbs should pass TemplateLint.\n\n');
+  });
+  QUnit.test('ember3-bootstrap4-template/templates/components/modal-feedback2.hbs', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'ember3-bootstrap4-template/templates/components/modal-feedback2.hbs should pass TemplateLint.\n\n');
+  });
   QUnit.test('ember3-bootstrap4-template/templates/components/modal-fulldynamic.hbs', function (assert) {
     assert.expect(1);
     assert.ok(true, 'ember3-bootstrap4-template/templates/components/modal-fulldynamic.hbs should pass TemplateLint.\n\n');
@@ -291,7 +355,7 @@ define("ember3-bootstrap4-template/tests/lint/templates.template.lint-test", [],
   });
   QUnit.test('ember3-bootstrap4-template/templates/modals.hbs', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'ember3-bootstrap4-template/templates/modals.hbs should pass TemplateLint.\n\nember3-bootstrap4-template/templates/modals.hbs\n  36:88  error  Incorrect indentation for `button` beginning at L35:C28. Expected `</button>` ending at L36:C88 to be at an indentation of 28 but was found at 79.  block-indentation\n  36:69  error  Incorrect indentation for `Show modal` beginning at L36:C69. Expected `Show modal` to be at an indentation of 32 but was found at 69.  block-indentation\n');
+    assert.ok(false, 'ember3-bootstrap4-template/templates/modals.hbs should pass TemplateLint.\n\nember3-bootstrap4-template/templates/modals.hbs\n  191:14  error  Incorrect indentation for `div` beginning at L170:C4. Expected `</div>` ending at L191:C14 to be at an indentation of 4 but was found at 8.  block-indentation\n  171:12  error  Incorrect indentation for `<div>` beginning at L171:C12. Expected `<div>` to be at an indentation of 8 but was found at 12.  block-indentation\n');
   });
   QUnit.test('ember3-bootstrap4-template/templates/typography.hbs', function (assert) {
     assert.expect(1);
@@ -313,6 +377,14 @@ define("ember3-bootstrap4-template/tests/lint/tests.lint-test", [], function () 
   QUnit.test('integration/components/app-menu-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/app-menu-test.js should pass ESLint\n\n');
+  });
+  QUnit.test('integration/components/modal-feedback1-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/modal-feedback1-test.js should pass ESLint\n\n');
+  });
+  QUnit.test('integration/components/modal-feedback2-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/modal-feedback2-test.js should pass ESLint\n\n');
   });
   QUnit.test('integration/components/modal-fulldynamic-test.js', function (assert) {
     assert.expect(1);

@@ -33,7 +33,9 @@
                         <span class="text-small">Closing behavior corrected</span>
                         <form class="forms-sample">
                             <button type="submit" class="btn btn-xl btn-success mr-2"
-                                {{action "showPlainModalCorrected"}}>Show modal</button>
+                                {{action "showPlainModalCorrected"}}>
+                                Show modal
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -138,4 +140,54 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+        <div class="row flex-grow">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Get feedback</h4>
+                        <p class="card-description">
+                            Example of receiving feedback from the buttons of the modal dialog
+                        </p>
+                        <span class="text-small">Try both buttons</span>
+                        <form class="forms-sample">
+                            <button type="submit" class="btn btn-xl btn-success mr-2"
+                                {{action "showFeedback1Modal"}}>
+                                Open modal to get feedback
+                            </button>
+                            <label class="col-form-label">{{feedback1}}</label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 d-flex align-items-stretch grid-margin">
+            <div class="row flex-grow">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Get feedback from multiple options</h4>
+                            <p class="card-description">
+                                Get feedback where there is more than one valid option
+                            </p>
+                            <span class="text-small">Try all buttons</span>
+                            <form class="forms-sample">
+                                <button type="submit" class="btn btn-xl btn-success mr-2"
+                                    {{action "showFeedback2Modal"}}>
+                                    Open modal to get feedback
+                                </button>
+                                <label class="col-form-label">{{feedback2}}</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 </div>

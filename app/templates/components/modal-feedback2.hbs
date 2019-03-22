@@ -1,0 +1,27 @@
+{{#bs-modal message=model.options.message onHidden=(action "closeModal") as |modal|}}
+    {{#modal.header}}
+        <h4 class="modal-title">
+            Message
+        </h4>
+    {{/modal.header}}
+    {{#modal.body}}
+        Do you want to donate?
+    {{/modal.body}}
+    {{#modal.footer}}
+        {{#bs-button type="danger" onClick=(action reject)}}
+            No
+        {{/bs-button}}
+
+        {{#bs-button type="warning" onClick=(action resolve "10")}}
+            Donate $10
+        {{/bs-button}}
+
+        {{#bs-button type="secondary" onClick=(action resolve "20")}}
+            Donate $20
+        {{/bs-button}}
+
+        {{#bs-button type="primary" onClick=(action resolve "50")}}
+            Donate $50
+        {{/bs-button}}
+    {{/modal.footer}}
+{{/bs-modal}}
